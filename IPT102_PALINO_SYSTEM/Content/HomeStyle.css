@@ -1,0 +1,35 @@
+﻿.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed for the desired height */
+}
+
+.Ctn {
+    display: flex;
+    align-items: center;
+}
+
+    .Ctn img {
+        width: 30%;
+        height: auto;
+        margin-right: 10px; /* Adjust as needed for spacing between image and text */
+    }
+
+.text-container {
+    text-align: left;
+}
+
+.get-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Adjust color as needed */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Adjust as needed for spacing */
+}
+
+    .get-btn:hover {
+        background-color: #0056b3; /* Adjust hover color as needed */
+    }

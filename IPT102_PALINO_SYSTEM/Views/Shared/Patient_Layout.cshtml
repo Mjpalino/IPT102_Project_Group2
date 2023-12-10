@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link href="~/Content/Patient_css/Index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@700&display=swap" />
+</head>
+<body>
+    <div class="topnav">
+        <p>Welcome to the Admin Dashboard, @Model.Username!</p>
+    </div>
+    <div class="sidenav">
+        <div class="profile-img">
+            <img src="~/Content/Patient_css/public/human-1@2x.png" style="width: 100px;" />
+        </div>
+        <div class="profile-info">
+            @if (User.IsInRole("Admin"))
+            {
+                <p>Admin</p>
+            }
+            else if (User.IsInRole("MedicalStaff"))
+            {
+                <p>Medical Staff</p>
+            }
+            else if (User.IsInRole("Patient"))
+            {
+                <p>Patient</p>
+            }
+        </div>
+
+        <img src="~/Content/Patient_css/public/group-9@2x.png" style="width: 30px; height: 30px; margin-right: 10px;"/>
+        <a href="@Url.Action("Dashboard", "Dashboard")" class="dropdown-btn">Dashboard</a>
+
+        <img src="~/Content/Patient_css/public/group-10@2x.png" />
+        <a href="@Url.Action("Profile", "Profile", new { @class = "dropdown-btn" })">Profile</a>
+        <img src="~/Content/Patient_css/public/group-11@2x.png" />
+        <a class="dropdown-btn">Appointment</a>
+
+        <div class="dropdown-container">
+            <a href="@Url.Action("Request_Appointment", "Request_Appointment", new { @class = "btn-Appointment" })">Request_Appointment</a>
+            <a href="@Url.Action("Your_Appointment", "Your_Appointment", new { @class = "btn-Appointment" })">Your Appointment</a>
+        </div>
+        <img src="~/Content/Patient_css/public/mask-group@2x.png" />
+        <a href="@Url.Action("Prescription", "Prescription", new { @class = "dropdown-btn" })">Prescription</a>
+        <img src="~/Content/Patient_css/public/mask-group1@2x.png" />
+
+        <a class="dropdown-btn">Complaints</a>
+        <div class="dropdown-container">
+            <a href="@Url.Action("AddComplaints", "AddComplaints", new { @class = "" })">Add of Complains</a>
+            <a href="@Url.Action("ListofComplains", "ListofComplains", new { @class = "" })">List of Complains</a>
+        </div>
+
+        <img src="~/Content/Patient_css/public/mask-group2@2x.png" />
+        <a href="@Url.Action("Manage", "Manage", new { @class = "dropdown-btn" })">Manage</a>
+
+        <div class="container-SignOut">
+            <a href="@Url.Action("Sign Out", "Sign Out", new { @class = "SignOut" })">Sign Out</a>
+        </div>
+    </div>
+        @RenderBody();
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var dropdowns = document.getElementsByClassName("dropdown-btn");
+
+                for (var i = 0; i < dropdowns.length; i++) {
+                    dropdowns[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                    });
+                }
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                var links = document.querySelectorAll('.sidenav a');
+
+                links.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        // Remove active class from all links
+                        links.forEach(function (otherLink) {
+                            otherLink.classList.remove('active');
+                        });
+
+                        // Add active class to the clicked link
+                        this.classList.add('active');
+                    });
+                });
+            });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                var links = document.querySelectorAll('.dropdown-container a');
+
+                links.forEach(function (link) {
+                    link.addEventListener('click', function () {
+                        // Remove active class from all links
+                        links.forEach(function (otherLink) {
+                            otherLink.classList.remove('active');
+                        });
+
+                        // Add active class to the clicked link
+                        this.classList.add('active');
+                    });
+                });
+            });
+
+
+        </script>
+</body>
+</html>

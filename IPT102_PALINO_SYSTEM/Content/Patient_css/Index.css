@@ -1,0 +1,107 @@
+﻿.sidenav {
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+    margin-left: 8px;
+    height: calc(100% - 60px); /* Adjust the height to leave space for the topnav */
+    width: 250px;
+    position: fixed;
+    top: 60px; /* Adjust the top position based on topnav height */
+    background-color: #E9F6E6;
+    overflow-y: auto; /* Add scroll if the content exceeds the height */
+}
+
+.dropdown-btn {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #155A03;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 16px;
+}
+
+.sidenav a {
+    padding: 20px 30px;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+    color: #155a03;
+    display: block;
+    cursor: pointer;
+}
+
+    .sidenav a:hover {
+        color: white;
+        background-color: #b8d6b0;
+    }
+
+    .sidenav a.active {
+        background-color: #b8d6b0; /* Change this to the desired background color */
+        color: #155a03; /* Change this to the desired text color */
+    }
+
+.dropdown-container a {
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #DFCFAE;
+    font-size: 10px;
+    color: #8D7E5B;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+}
+
+    .dropdown-container a.active {
+        background-color: #EBB847;
+        color: white;
+    }
+
+    .dropdown-container a:hover {
+        background-color: #EBB847;
+        color: white;
+    }
+
+
+
+.topnav {
+    height: 50px;
+    width: 100%;
+    background-color: #083D29;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+    .topnav label {
+        color: #E9F6E6;
+        font-size: 20px;
+        margin-right: 90%;
+    }
+
+.profile-info {
+    color: #545454;
+    text-align: right;
+    padding-right: 50%;
+}
+
+    .profile-info p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+
+

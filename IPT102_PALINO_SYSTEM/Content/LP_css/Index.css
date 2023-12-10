@@ -1,0 +1,817 @@
+﻿body {
+    margin: 0;
+    line-height: normal;
+}
+
+:root {
+    /* fonts */
+    --font-dm-sans: "DM Sans";
+    --font-inter: Inter;
+    --font-josefin-sans: "Josefin Sans";
+    --font-yrsa: Yrsa;
+    --font-familjen-grotesk: "Familjen Grotesk";
+    /* font sizes */
+    --font-size-4xl: 23px;
+    --font-size-lg: 18px;
+    --font-size-smi: 13px;
+    --font-size-3xl: 22px;
+    --font-size-mini: 15px;
+    --font-size-6xl: 25px;
+    --font-size-11xl: 30px;
+    --font-size-109xl: 128px;
+    --font-size-31xl: 50px;
+    --font-size-16xl: 35px;
+    /* Colors */
+    --color-white: #fff;
+    --color-darkgreen: #155a03;
+    --color-darkslategray: #083d29;
+    --color-dimgray: #575050;
+    /* Border radiuses */
+    --br-8xs: 5px;
+}
+
+
+.aboutus-img-1-icon {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 1440px;
+    height: 884px;
+    object-fit: cover;
+}
+
+.medicare,
+.welcome-to,
+.your-partner-in {
+    position: absolute;
+    top: 542px;
+    left: 206px;
+    display: inline-block;
+    color: var(--color-darkgreen);
+    width: 654px;
+    height: 35px;
+}
+
+.medicare,
+.welcome-to {
+    top: 355px;
+    left: 292px;
+    width: 362px;
+    height: 34px;
+}
+
+.medicare {
+    top: 389px;
+    left: 111px;
+    font-size: 110px;
+    color: var(--color-darkslategray);
+    width: 725px;
+    height: 183px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.landing-page-child {
+    position: absolute;
+    top: 833px;
+    left: 538px;
+    border-radius: 15px;
+    background-color: var(--color-darkslategray);
+    width: 329px;
+    height: 59px;
+    cursor: pointer;
+}
+
+.show-me-more {
+    position: absolute;
+    top: 845px;
+    left: 594px;
+    font-family: var(--font-inter);
+    display: inline-block;
+    width: 294px;
+    height: 35px;
+}
+
+.landing-page-item {
+    position: absolute;
+    top: 1688px;
+    left: 0;
+    border-radius: 3px;
+    background-color: #f3f3f3;
+    width: 1440px;
+    height: 731px;
+}
+
+.to-provide-specialized {
+    position: absolute;
+    top: 2344px;
+    left: 277px;
+    font-size: var(--font-size-lg);
+    color: var(--color-dimgray);
+    text-align: justify;
+    display: inline-block;
+    width: 1139px;
+    height: 75px;
+}
+
+.landing-page-inner {
+    position: absolute;
+    top: 1841px;
+    left: 616px;
+    border-radius: var(--br-8xs);
+    background-color: #abe2b7;
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    box-sizing: border-box;
+    width: 700px;
+    height: 253px;
+}
+
+.medicare-is-a {
+    position: absolute;
+    top: 1920px;
+    left: 643px;
+    font-size: 16px;
+    color: var(--color-darkslategray);
+    text-align: justify;
+    display: inline-block;
+    width: 642px;
+    height: 310px;
+}
+
+.safetyseal-1-icon {
+    position: absolute;
+    top: 1841px;
+    left: 126px;
+    border-radius: var(--br-8xs);
+    width: 462px;
+    height: 253px;
+    object-fit: cover;
+}
+
+.about-us {
+    top: 1728px;
+    left: 594px;
+    font-size: var(--font-size-31xl);
+    color: var(--color-darkslategray);
+    width: 372px;
+    height: 61px;
+}
+
+.about-us,
+.our-vision,
+.services {
+    position: absolute;
+    display: inline-block;
+    font-family: var(--font-familjen-grotesk);
+}
+
+.services {
+    top: 995px;
+    left: 594px;
+    font-size: var(--font-size-31xl);
+    color: var(--color-darkslategray);
+    width: 372px;
+    height: 61px;
+}
+
+.our-vision {
+    top: 2130px;
+    left: 607px;
+    font-size: var(--font-size-16xl);
+    width: 226px;
+    height: 60px;
+}
+
+.our-mission,
+.our-vision,
+.who-we-are {
+    color: var(--color-darkslategray);
+}
+
+.our-mission {
+    position: absolute;
+    top: 2276px;
+    left: 594px;
+    font-size: var(--font-size-16xl);
+    display: inline-block;
+    font-family: var(--font-familjen-grotesk);
+    width: 252px;
+    height: 61px;
+}
+
+.who-we-are {
+    top: 1867px;
+    left: 643px;
+    font-size: var(--font-size-6xl);
+    width: 284px;
+    height: 29px;
+}
+
+.facilities,
+.to-always-be,
+.who-we-are {
+    position: absolute;
+    display: inline-block;
+}
+
+.to-always-be {
+    top: 2197px;
+    left: 223px;
+    font-size: var(--font-size-lg);
+    color: var(--color-dimgray);
+    text-align: center;
+    width: 994px;
+    height: 29px;
+}
+
+.facilities {
+    top: 2443px;
+    left: 594px;
+    font-size: var(--font-size-31xl);
+    font-family: var(--font-familjen-grotesk);
+    color: var(--color-darkslategray);
+    width: 349px;
+    height: 71px;
+}
+
+.facility1-1-icon {
+    position: absolute;
+    top: 2556px;
+    left: 121px;
+    width: 383px;
+    height: 241px;
+    object-fit: cover;
+}
+
+.ambulatory-surgical-centers,
+.clinic-and-medical,
+.imaging-and-radiology {
+    position: absolute;
+    top: 2828px;
+    left: 152px;
+    font-size: var(--font-size-6xl);
+    display: inline-block;
+    color: var(--color-darkgreen);
+    text-align: center;
+    width: 320px;
+    height: 30px;
+}
+
+.clinic-and-medical,
+.imaging-and-radiology {
+    left: 972px;
+    width: 326px;
+}
+
+.clinic-and-medical {
+    left: 577px;
+    width: 292px;
+}
+
+.atmosphere-12-00115-g001-1-icon,
+.facility3-1-icon {
+    position: absolute;
+    top: 2556px;
+    left: 532px;
+    width: 383px;
+    height: 241px;
+    object-fit: cover;
+}
+
+.atmosphere-12-00115-g001-1-icon {
+    top: 2948px;
+    left: 0;
+    width: 1443px;
+    height: 698px;
+}
+
+.dr-kathryn-bernardo {
+    position: absolute;
+    top: 3513px;
+    left: 158px;
+    font-family: var(--font-yrsa);
+    text-align: center;
+    display: inline-block;
+    width: 271px;
+    height: 40px;
+}
+
+.andrea-brillantes {
+    top: 3513px;
+    left: 656px;
+    text-align: center;
+    width: 220px;
+    height: 41px;
+}
+
+.andrea-brillantes,
+.daniel-padilla,
+.medicare-clinic-has {
+    position: absolute;
+    font-family: var(--font-yrsa);
+    display: inline-block;
+}
+
+.daniel-padilla {
+    top: 3480px;
+    left: 1109px;
+    text-align: center;
+    width: 172px;
+    height: 41px;
+}
+
+.medicare-clinic-has {
+    top: 3205px;
+    left: 73px;
+    width: 400px;
+    height: 275px;
+}
+
+.div,
+.div1 {
+    top: 3143px;
+    font-size: var(--font-size-109xl);
+    text-align: center;
+    height: 94px;
+}
+
+.div {
+    position: absolute;
+    left: 66px;
+    font-family: var(--font-yrsa);
+    display: inline-block;
+    width: 66px;
+}
+
+.div1 {
+    left: 537px;
+    width: 65px;
+}
+
+.div1,
+.div2,
+.kudos-to-clinical,
+.the-easy-interface {
+    position: absolute;
+    font-family: var(--font-yrsa);
+    display: inline-block;
+}
+
+.div2 {
+    top: 3143px;
+    left: 1001px;
+    font-size: var(--font-size-109xl);
+    text-align: center;
+    width: 65px;
+    height: 94px;
+}
+
+.kudos-to-clinical,
+.the-easy-interface {
+    top: 3205px;
+    left: 552px;
+    width: 385px;
+    height: 375px;
+}
+
+.the-easy-interface {
+    left: 1013px;
+    width: 364px;
+    height: 281px;
+}
+
+.ellipse-icon,
+.landing-page-child1,
+.landing-page-child2 {
+    position: absolute;
+    top: 3486px;
+    left: 73px;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+}
+
+.landing-page-child1,
+.landing-page-child2 {
+    left: 560px;
+}
+
+.landing-page-child2 {
+    top: 3452px;
+    left: 1013px;
+}
+
+.testimonials {
+    position: absolute;
+    top: 3017px;
+    left: 537px;
+    font-size: 45px;
+    font-family: var(--font-josefin-sans);
+    display: inline-block;
+    width: 559px;
+    height: 34px;
+}
+
+.group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-darkslategray);
+    width: 1440px;
+    height: 217px;
+}
+
+.mask-group-icon {
+    position: absolute;
+    top: 91px;
+    left: 615px;
+    width: 27px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.clinic {
+    margin: 0;
+}
+
+.medicare-clinic {
+    position: absolute;
+    top: 40px;
+    left: 202px;
+    font-size: var(--font-size-6xl);
+    display: inline-block;
+    width: 237.36px;
+    height: 90.13px;
+}
+
+.connect-with-us,
+.privacy-policy {
+    position: absolute;
+    top: 48px;
+    left: 1154px;
+    display: inline-block;
+    width: 209.1px;
+    height: 36.48px;
+}
+
+.privacy-policy {
+    top: 150px;
+    left: 73px;
+    width: 443.08px;
+    height: 60.08px;
+}
+
+.i-09326815192923,
+.maligaya-street-quezon,
+.medicare123gmailcom {
+    position: absolute;
+    top: 47px;
+    left: 656px;
+    display: inline-block;
+    width: 373.85px;
+    height: 34.33px;
+}
+
+.maligaya-street-quezon,
+.medicare123gmailcom {
+    top: 146px;
+    width: 308.57px;
+}
+
+.maligaya-street-quezon {
+    top: 96px;
+    left: 629px;
+    text-align: right;
+    width: 327px;
+    height: 69px;
+}
+
+.facebook-icon,
+.instagram-icon {
+    position: absolute;
+    top: 84px;
+    left: 1113px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+
+.instagram-icon {
+    left: 1200px;
+}
+
+.mask-group-icon1,
+.mask-group-icon2,
+.medicare-logo-1-1,
+.messenger-icon {
+    position: absolute;
+    top: 84px;
+    left: 1287px;
+    width: 31px;
+    height: 31px;
+    object-fit: cover;
+}
+
+.mask-group-icon1,
+.mask-group-icon2,
+.medicare-logo-1-1 {
+    top: 40px;
+    left: 611px;
+}
+
+.mask-group-icon2,
+.medicare-logo-1-1 {
+    top: 141px;
+    width: 36.14px;
+}
+
+.medicare-logo-1-1 {
+    top: 17px;
+    left: 73px;
+    width: 110px;
+    height: 110px;
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 3679px;
+    left: 0;
+    width: 1440px;
+    height: 217px;
+    font-size: var(--font-size-mini);
+}
+
+.rectangle-div {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    background-color: var(--color-darkslategray);
+    width: 1441px;
+    height: 73px;
+}
+
+.home {
+    position: absolute;
+    top: 22px;
+    left: 505px;
+    font-size: var(--font-size-3xl);
+    font-family: var(--font-inter);
+    display: inline-block;
+    width: 118px;
+    height: 23px;
+}
+
+.medicare-logo-1-2 {
+    position: absolute;
+    top: 3px;
+    left: 55px;
+    width: 64px;
+    height: 67px;
+    object-fit: cover;
+}
+
+.about-us1,
+.contact,
+.register,
+.services1,
+.sign-in {
+    position: absolute;
+    top: 22px;
+    left: 623px;
+    font-size: var(--font-size-3xl);
+    font-family: var(--font-inter);
+    display: inline-block;
+    width: 182px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.about-us1,
+.contact,
+.register,
+.sign-in {
+    left: 781px;
+    width: 176px;
+}
+
+.contact,
+.register,
+.sign-in {
+    left: 945px;
+    width: 162px;
+}
+
+.register,
+.sign-in {
+    left: 1104px;
+    width: 171px;
+}
+
+.sign-in {
+    left: 1255px;
+    width: 140px;
+}
+
+.landing-page-child3 {
+    position: absolute;
+    top: 1247px;
+    left: 126px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-darkslategray);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 276px;
+    height: 291px;
+}
+
+.orthophedics,
+.our-orthopedic-specialists-are-container {
+    position: absolute;
+    top: 1343px;
+    left: 138px;
+    font-size: var(--font-size-smi);
+    text-align: justify;
+    display: inline-block;
+    width: 250px;
+    height: 179px;
+}
+
+.orthophedics {
+    top: 1300px;
+    left: 141px;
+    font-size: var(--font-size-4xl);
+    text-align: center;
+    width: 247px;
+    height: 32px;
+}
+
+.landing-page-child4 {
+    position: absolute;
+    top: 1247px;
+    left: 426px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-darkslategray);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 276px;
+    height: 291px;
+}
+
+.cancer-care,
+.the-medicare-cancer {
+    position: absolute;
+    top: 1348px;
+    left: 442px;
+    font-size: var(--font-size-smi);
+    text-align: justify;
+    display: inline-block;
+    width: 244px;
+    height: 173px;
+}
+
+.cancer-care {
+    top: 1300px;
+    left: 466px;
+    font-size: var(--font-size-4xl);
+    text-align: center;
+    width: 212px;
+    height: 32px;
+}
+
+.landing-page-child5 {
+    position: absolute;
+    top: 1247px;
+    left: 726px;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-darkslategray);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 276px;
+    height: 291px;
+}
+
+.heart-and-vascular,
+.medicare-is-here {
+    position: absolute;
+    top: 1343px;
+    left: 745px;
+    font-size: var(--font-size-smi);
+    text-align: justify;
+    display: inline-block;
+    width: 239px;
+    height: 190px;
+}
+
+.heart-and-vascular {
+    top: 1300px;
+    left: 714px;
+    font-size: var(--font-size-4xl);
+    text-align: center;
+    width: 301px;
+    height: 32px;
+}
+
+.img-3-icon,
+.landing-page-child6 {
+    position: absolute;
+    border-radius: var(--br-8xs);
+    width: 276px;
+}
+
+.landing-page-child6 {
+    top: 1247px;
+    left: 1026px;
+    background-color: var(--color-darkslategray);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    height: 291px;
+}
+
+.img-3-icon {
+    top: 1112px;
+    left: 126px;
+    height: 170px;
+    object-fit: cover;
+}
+
+.experience-a-more {
+    position: absolute;
+    top: 1343px;
+    left: 1042px;
+    font-size: var(--font-size-smi);
+    text-align: justify;
+    display: inline-block;
+    width: 243px;
+    height: 169px;
+}
+
+.gen-info-page,
+.img-1-icon,
+.img-2-icon {
+    position: absolute;
+    top: 1113px;
+    left: 426px;
+    border-radius: var(--br-8xs);
+    width: 276px;
+    height: 169px;
+    object-fit: cover;
+}
+
+.gen-info-page,
+.img-2-icon {
+    top: 1112px;
+    left: 726px;
+    height: 170px;
+}
+
+.img-2-icon {
+    top: 1113px;
+    left: 1026px;
+    height: 169px;
+}
+
+.your-journey-to {
+    margin: 0;
+    color: var(--color-darkgreen);
+}
+
+.appointment,
+.at-medicare-we-container {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+}
+
+.at-medicare-we-container {
+    top: 1575px;
+    left: 167px;
+    font-size: var(--font-size-lg);
+    width: 1071px;
+    height: 146px;
+    color: var(--color-darkslategray);
+}
+
+.appointment {
+    top: 1300px;
+    left: 1014px;
+    font-size: var(--font-size-4xl);
+    width: 301px;
+    height: 32px;
+}
+
+.facility4-1-icon {
+    position: absolute;
+    top: 2556px;
+    left: 943px;
+    width: 383px;
+    height: 241px;
+    object-fit: cover;
+}
+
+.landing-page {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 3896px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-11xl);
+    color: var(--color-white);
+    font-family: var(--font-dm-sans);
+}
